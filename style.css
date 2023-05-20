@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#score {
+    text-align: right;
+    color: green;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 5px 10px rgb(144, 142, 142);
+    border-radius: 5px;
+}
+#answer {
+    border: 1px solid green;
+    margin: 5px auto;
+    height: 30px;
+    outline: none;
+    width: 100%;
+
+}
+#answer::placeholder {
+    color: rgb(196, 193, 193);
+}
+
+#btn {
+    background-color: green;
+    color: white;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px ;
+    margin-bottom: 10px;
+    height: 25px;
+}
