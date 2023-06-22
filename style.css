@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: yellow;
+    background-image: linear-gradient(to left, yellow, rgb(196, 196, 135));
     display: flex;
     justify-content: center;
     align-items: center;
