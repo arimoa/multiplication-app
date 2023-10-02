@@ -1,51 +1,62 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 body {
-    background-image: linear-gradient(to left, yellow, rgb(196, 196, 135));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  background-image: linear-gradient(to left, yellow, rgb(196, 196, 135));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #score {
-    text-align: right;
-    color: green;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  text-align: right;
+  color: green;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 #container {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    box-shadow: 0 5px 10px rgb(144, 142, 142);
-    border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 0 5px 10px rgb(144, 142, 142);
+  border-radius: 5px;
+  width: 350px;
 }
 #answer {
-    border: 1px solid green;
-    margin: 5px auto;
-    height: 30px;
-    outline: none;
-    width: 100%;
-
+  border: 1px solid green;
+  margin: 5px auto;
+  height: 30px;
+  outline: none;
+  width: 100%;
 }
 #answer::placeholder {
-    color: rgb(196, 193, 193);
+  color: rgb(196, 193, 193);
 }
 
 #btn {
-    background-color: green;
-    color: white;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 5px ;
-    margin-bottom: 10px;
-    height: 25px;
+  background-color: green;
+  color: white;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 25px;
+  transition: 0.2s;
+}
+#btn:hover {
+  background-color: rgb(82, 189, 82);
+}
+@media (max-width: 351px) {
+  #container {
+    width: 95%;
+  }
 }
